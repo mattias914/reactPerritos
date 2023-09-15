@@ -1,0 +1,65 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  border-bottom: 1px solid #ccc;
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.layout {
+  margin: 20px 20px 0 20px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  place-items: center;
+  border-radius: 2%;
+}
+
+.card h3,p {
+  margin: 10px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 50px;
+  border-top:1px solid #ccc;
+  position: inherit;
+  align-items: center;
+}
+
+.badge{
+  margin: 5px 5px 15px 5px;
+  width: 50%;
+}
